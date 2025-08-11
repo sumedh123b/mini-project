@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taste Paradise</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f8f5f0; }
+    /* Navigation */
+    nav {
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
+        padding: 15px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    nav ul { list-style: none; display: flex; justify-content: center; }
+    nav ul li { margin: 0 20px; }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    nav ul li a:hover { color: yellow; }
+    /* Banner */
+    .banner {
+        margin-top: 65px;
+        background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 45px;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px black;
+    }
+    /* Menu Grid */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+    .dish {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    .dish:hover { transform: translateY(-5px); box-shadow: 0px 6px 20px rgba(0,0,0,0.2); }
+    .dish img { width: 100%; height: 200px; object-fit: cover; }
+    .dish h3 { margin: 15px; font-size: 20px; }
+    .dish p { margin: 0 15px 15px; color: #e67e22; font-weight: bold; font-size: 18px; }
+    /* Footer */
+    footer { background: #222; color: white; text-align: center; padding: 15px 0; margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="about1.html">About</a></li>
+        <li><a href="contact1.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="banner">
+    Welcome to Taste Paradise
+</div>
+
+<div class="container">
+    <div class="dish">
+        <img src="https://images.unsplash.com/photo-1604147706283-d8f26e3a10a6" alt="Pizza">
+        <h3>Cheese Burst Pizza</h3>
+        <p>₹299</p>
+    </div>
+    <div class="dish">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Burger">
+        <h3>Double Patty Burger</h3>
+        <p>₹199</p>
+    </div>
+    <div class="dish">
+        <img src="https://images.unsplash.com/photo-1605478962745-72839e7d8cf5" alt="Pasta">
+        <h3>Creamy Alfredo Pasta</h3>
+        <p>₹249</p>
+    </div>
+    <div class="dish">
+        <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022" alt="Salad">
+        <h3>Fresh Caesar Salad</h3>
+        <p>₹149</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Taste Paradise | Designed by Sumedh
+</footer>
+
+</body>
+</html>

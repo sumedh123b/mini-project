@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Taste Paradise</title>
+<style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f8f5f0; }
+    nav { background: linear-gradient(90deg, #ff7e5f, #feb47b); padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    nav ul { list-style: none; display: flex; justify-content: center; }
+    nav ul li { margin: 0 20px; }
+    nav ul li a { color: white; text-decoration: none; font-size: 18px; font-weight: bold; }
+    nav ul li a:hover { color: yellow; }
+    .content { padding: 100px 20px 20px; max-width: 600px; margin: auto; text-align: center; }
+    form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: linear-gradient(90deg, #ff7e5f, #feb47b); color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; font-size: 16px; cursor: pointer; }
+    button:hover { opacity: 0.9; }
+    footer { background: #222; color: white; text-align: center; padding: 15px 0; margin-top: 30px; }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <h1>Reserve a Table</h1>
+    <p>Fill in your details and we will confirm your booking shortly.</p>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="tel" placeholder="Your Phone Number" required>
+        <input type="date" required>
+        <textarea rows="4" placeholder="Special Requests"></textarea>
+        <button type="submit">Book Now</button>
+    </form>
+    <p>Email: contact@tasteparadise.com</p>
+    <p>Phone: +91 9876543210</p>
+</div>
+
+<footer>
+    &copy; 2025 Taste Paradise
+</footer>
+
+</body>
+</html>
